@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Threejs Sandbox</title>
+  <style>
+    body { margin: 0; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js" integrity="sha256-V0EyXecXmQqSk1QW7iej2g+pzqX02oz78cnceES2ZCs=" crossorigin="anonymous"></script>
+  <script src="./game.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const game = new Game();
+      window.game = game; // for debugging purpose
+    });
+  </script>
+</body>
+</html>
