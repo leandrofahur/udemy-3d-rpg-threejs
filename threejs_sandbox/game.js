@@ -10,7 +10,7 @@ class Game {
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(this.renderer.domElement);
 
-    const geometry = new THREE.CircleGeometry(1,360);
+    const geometry = new THREE.CircleGeometry(0.1,360);
     const material = new THREE.MeshBasicMaterial({color: 0xcccccc});
     this.cube = new THREE.Mesh(geometry, material);
     this.scene.add(this.cube);
